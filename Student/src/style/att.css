@@ -1,0 +1,302 @@
+.attendance-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: linear-gradient(to right, rgba(0, 50, 100, 0.8), rgba(0, 150, 200, 0.8));
+  color: white;
+  text-align: center;
+  padding: 50px;
+}
+
+.admin-attendance-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.admin-attendance {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  width: 320px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.admin-attendance input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  text-align: center;
+}
+
+.admin-attendance button {
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.admin-attendance button:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.student-attendance-container {
+  width: 90%;
+  max-width: 1000px;
+  margin-top: 30px;
+  overflow-y: auto;
+  max-height: 500px;
+}
+
+.student-attendance {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.student-attendance th {
+  padding: 15px;
+  background: rgba(0, 0, 50, 0.9);
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.student-attendance td {
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  font-size: 16px;
+}
+
+.student-attendance .present {
+  background: rgba(50, 205, 50, 0.8);
+  color: white;
+}
+
+.student-attendance .absent {
+  background: rgba(255, 69, 0, 8);
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .student-attendance {
+    font-size: 14px;
+  }
+
+  .student-attendance th, 
+  .student-attendance td {
+    padding: 10px;
+  }
+}
+.attendance-container {
+  min-height: 200vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: linear-gradient(to right, rgba(0, 50, 100, 0.8), rgba(0, 150, 200, 0.8));
+  color: white;
+  text-align: center;
+  padding: 170px;
+}
+
+.admin-attendance-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.admin-attendance {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  width: 320px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.admin-attendance input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  text-align: center;
+}
+
+.admin-attendance h3{
+  padding:20px;
+}
+.admin-attendance button {
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.admin-attendance button:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.student-attendance-container {
+  width: 90%;
+  max-width: 1000px;
+  margin-top: 30px;
+  overflow-y: auto;
+  max-height: 700px; 
+}
+
+.student-attendance {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.student-attendance th {
+  padding: 15px;
+  background: rgba(0, 0, 50, 0.9);
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.student-attendance td {
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  font-size: 16px;
+}
+
+.student-attendance .present {
+  background: rgba(50, 205, 50, 0.8);
+  color: white;
+}
+
+.student-attendance .absent {
+  background: rgba(255, 69, 0, 8);
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .student-attendance {
+    font-size: 14px;
+  }
+
+  .student-attendance th, 
+  .student-attendance td {
+    padding: 10px;
+  }
+}
+
+
+.admin-attendance-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.admin-attendance-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.student-name {
+  width: 150px;
+  font-weight: bold;
+}
+
+.present {
+  color: green;
+  font-weight: bold;
+}
+
+.absent {
+  color: red;
+  font-weight: bold;
+}
+
+.summary-table {
+  width: 100%;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+}
+.summary-table th, .summary-table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type="text"] {
+  padding: 8px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

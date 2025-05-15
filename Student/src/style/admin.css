@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .admin-container {
+    padding: 120px;
+    text-align: center;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    min-height: 100vh;
+    color: white;
+  }
+  
+  .admin-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .admin-container input {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 25px;
+    text-align: center;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+  
+  .admin-container input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .admin-container table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .admin-container th, .admin-container td {
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .admin-container th {
+    background: rgba(255, 255, 255, 0.3);
+    font-weight: bold;
+  }
+  
+  .admin-container tbody tr:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transition: 0.3s;
+  }
+  
+  @media (max-width: 600px) {
+    .admin-container input {
+      width: 80%;
+    }
+    
+    .admin-container table {
+      font-size: 12px;
+    }
+  }
+  
